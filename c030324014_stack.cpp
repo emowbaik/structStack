@@ -1,18 +1,21 @@
 #include <iostream>
 #include <string>
 using namespace std;
-#define MAXSTACK 10
+#define MAXTUMPUKAN 10
 
 typedef int tipeItem;
 typedef struct {
-    tipeItem Item[MAXSTACK];
+    tipeItem Item[MAXTUMPUKAN];
     int Count;
 } Stack;
 
-void inisialisasi(Stack *S) {
+void awal(Stack *S) {
     S->Count = 0;
 }
 
+int penuh(Stack *S){
+    return (S->Count == MAXTUMPUKAN);
+}
 
 int main(){
     return 0;
