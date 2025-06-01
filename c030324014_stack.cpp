@@ -21,6 +21,17 @@ int kosong(Stack *S){
     return (S->Count == 0);
 }
 
+void pop(Stack *S, tipeItem *x) {
+    if (kosong(S)) {
+        cout << "Stack kosong!" << endl;
+    } else {
+        --(S->Count);
+        *x = S->Item[S->Count];
+    }
+}
+
 int main(){
+    Stack S;
+    awal(&S);
     return 0;
 }
