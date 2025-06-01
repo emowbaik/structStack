@@ -40,7 +40,26 @@ void push(tipeItem x, Stack *S){
 }
 
 int main(){
-    Stack S;
-    awal(&S);
+    Stack alam;
+    awal(&alam);
+
+    tipeItem *qwe = alam.Item;
+    pop(&alam, qwe);
+    push(99, &alam);
+    push(73, &alam);
+    push(23, &alam);
+    push(88, &alam);
+    pop(&alam, qwe);
+    push(12, &alam);
+    push(65, &alam);
+    push(53, &alam);
+    push(45, &alam);
+    push(34, &alam);
+    push(78, &alam);
+    push(90, &alam);
+    pop(&alam, qwe);
+    push(100, &alam);
+    push(101, &alam);
+    push(102, &alam);
     return 0;
 }
