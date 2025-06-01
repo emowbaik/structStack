@@ -17,6 +17,10 @@ int penuh(Stack *S){
     return (S->Count == MAXTUMPUKAN);
 }
 
+int kosong(Stack *S){
+    return (S->Count == 0);
+}
+
 int main(){
     return 0;
 }
